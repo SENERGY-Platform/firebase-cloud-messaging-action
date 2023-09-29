@@ -54,6 +54,12 @@ func main() {
 	if err := os.WriteFile("credentials.json", []byte(credentials), 0440); err != nil {
 		log.Fatal(err)
 	}
+	defer func() {
+		err = os.Remove("credentials.json")
+		if err != nil {
+			log.Fatal(err)
+		}
+	}()
 
 	err = os.Setenv("GOOGLE_APPLICATION_CREDENTIALS", "credentials.json")
 	if err != nil {
