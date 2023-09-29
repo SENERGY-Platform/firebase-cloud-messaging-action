@@ -7,6 +7,7 @@ ENV GO111MODULE=on
 
 RUN CGO_ENABLED=0 GOOS=linux go build -o app
 
-FROM scratch
+FROM alpine:latest
+WORKDIR /root/
 COPY --from=builder /go/src/app/app .
 CMD ["./app"]
