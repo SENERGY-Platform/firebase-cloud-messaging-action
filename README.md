@@ -1,6 +1,6 @@
 # Firebase Cloud Messaging Action
 
-Send a message via Firebase Cloud Messaging (FCM) ion your GitHub workflows.
+Send a message via Firebase Cloud Messaging (FCM) in your GitHub workflows.
 
 ## Inputs
 
