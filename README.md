@@ -13,8 +13,8 @@ Send a message via Firebase Cloud Messaging (FCM) ion your GitHub workflows.
 **Required** The message to be sent in JSON format. Example: {"topic": "my-topic", "data": {"foo": "bar"}}
 
 ## Example usage
-
-uses: senergy-platform/firebase-cloud-messaging-action@latest
-with:
-  CREDENTIALS: ${{ secrets.FCM_CREDENTIALS }}
-  INPUT_MESSAGE: '{"topic": "android", "data": {"foo": "bar"}}'
+    - name: FCM Action
+      uses: senergy-platform/firebase-cloud-messaging-action@latest
+      with:
+        CREDENTIALS: ${{ secrets.FCM_CREDENTIALS }}
+        MESSAGE: '{"topic": "android", "data": {"foo": "bar"}}'
