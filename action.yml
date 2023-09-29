@@ -1,0 +1,12 @@
+name: 'Firebase Cloud Messaging Action'
+description: 'Send a message via Firebase Cloud Messaging (FCM) ion your GitHub workflows'
+inputs:
+  CREDENTIALS:
+    description: 'Your FCM credentials in JSON format. This includes the project_id, private_key, etc. Use a secret for this!'
+    required: true
+  MESSAGE:
+    description: 'The message to be sent in JSON format. Example: {"topic": "my-topic", "data": {"foo": "bar"}}'
+    required: true
+runs:
+  using: 'docker'
+  image: 'ghcr.io/senergy-platform/firebase-cloud-messaging-action:latest'
