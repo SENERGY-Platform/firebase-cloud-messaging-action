@@ -8,7 +8,7 @@ Send a message via Firebase Cloud Messaging (FCM) ion your GitHub workflows.
 
 **Required** Your FCM credentials in JSON format. This includes the project_id, private_key, etc. Use a secret for this!
 
-## `CREDENTIALS`
+## `MESSAGE`
 
 **Required** The message to be sent in JSON format. Example: {"topic": "my-topic", "data": {"foo": "bar"}}
 
