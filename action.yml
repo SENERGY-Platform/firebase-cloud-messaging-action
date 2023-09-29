@@ -9,4 +9,4 @@ inputs:
     required: true
 runs:
   using: 'docker'
-  image: 'ghcr.io/senergy-platform/firebase-cloud-messaging-action:latest'
+  image: 'docker://ghcr.io/senergy-platform/firebase-cloud-messaging-action:latest'
